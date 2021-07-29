@@ -1,0 +1,207 @@
+﻿<%@ Master Language="VB" CodeFile="music.master.vb" Inherits="music" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 99%;
+            height: 63px;
+        }
+        .style2
+        {
+            width: 312px;
+            height: 180px;
+        }
+        .style18
+        {
+            font-size: xx-large;
+            height: 180px;
+        }
+        .style5
+        {
+            width: 120px;
+            text-align: center;
+            font-size: large;
+            height: 65px;
+        }
+        .style16
+        {
+            font-size: large;
+            font-weight: normal;
+        }
+        .style4
+        {
+            width: 120px;
+            text-align: center;
+            font-size: x-large;
+            height: 65px;
+        }
+        .style19
+        {
+            width: 152px;
+            text-align: center;
+            font-size: x-large;
+            height: 65px;
+        }
+        .style7
+        {
+            width: 544px;
+            text-align: left;
+            height: 164px;
+        }
+        .style8
+        {
+            font-size: x-large;
+        }
+        .style11
+        {
+            color: #FFFFFF;
+        }
+        .style9
+        {
+            font-size: large;
+        }
+        .style13
+        {
+            color: #C0C0C0;
+        }
+        .style12
+        {
+            font-size: large;
+            color: #C0C0C0;
+        }
+        .style10
+        {
+            height: 164px;
+            text-align: center;
+        }
+        .style14
+        {
+            color: #808080;
+        }
+        .style20
+        {
+            width: 100%;
+        }
+        .newStyle1
+        {
+            border-style: double;
+        }
+        .style21
+        {
+            height: 30px;
+        }
+        .style22
+        {
+            font-size: xx-large;
+        }
+        </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div>
+        <table class="style1" border ="2px">
+            <tr>
+                <td class="style2" bgcolor="#000099">
+                    <asp:Image ID="Image1" runat="server" Height="169px" ImageUrl="~/images2.png" 
+                        Width="311px" />
+                </td>
+                <td class="style18" bgcolor="#000099">
+                    <h1>
+                        &nbsp;&nbsp; <strong>ONLINE MUSIC</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="Button2" runat="server" Height="40px" 
+                            PostBackUrl="~/login.aspx" Text="Log out" Width="98px" 
+                            style="text-align: center" />
+&nbsp;&nbsp; &nbsp;</h1>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <table class="style20">
+        <tr>
+            <td bgcolor="Blue" class="style21">
+&nbsp; <strong><span class="style22">&nbsp;Search : </span></strong>&nbsp;
+                <asp:TextBox ID="TextBox1" runat="server" Height="25px" Width="583px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button3" runat="server" style="text-align: center" 
+                    Text="Search" Width="121px" />
+            </td>
+        </tr>
+    </table>
+    <table class="style1" border ="2px">
+        <tr>
+            <td class="style5" bgcolor="#999966">
+                <h2 class="style16">
+                    <a href="">HOME</a></h2>
+            </td>
+            <td class="style4" bgcolor="#999966">
+                <h2 class="style16">
+                    <a href="">SONGS</a></h2>
+            </td>
+            <td class="style4" bgcolor="#999966">
+                <h2 class="style16">
+                    <a href="">TOP ARTISTS</a></h2>
+                    
+            </td>
+            <td class="style4" bgcolor="#999966">
+                <h2 class="style16">
+                   <a href=""> DISCOVER</a></h2>
+            </td>
+            <td class="style4" bgcolor="#999966">
+                <h2 class="style16">
+                    <a href="">ABOUT US</a></h2>
+            </td>
+            <td class="style19" bgcolor="#999966">
+                <h2 class="style16">
+                    <a href="">FEEDBACK</a></h2>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+
+        <br />
+        <br />
+        <table class="style20">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <br><table class="style1">
+            <tr>
+                <td bgcolor="Black" class="style7">
+                    <span class="style8"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="style11">&nbsp;Music</span><br />
+                    </strong></span>
+                    <br />
+                    <span class="style9">&nbsp;<span class="style13">An art of sound in time that 
+                    expresses ideas and</span></span><br class="style12" />
+                    <span class="style12">emotions in significant forms through the elements</span><br 
+                        class="style12" />
+                    <span class="style12">of rhythm,melody,harmony, and color.</span></td>
+                <td bgcolor="Black" class="style10">
+                    &nbsp; <span class="style14"><a href="">HOME</a></span><br class="style14" />
+                    <span class="style14">&nbsp;<a href=""> SONGS</a></span><br class="style14" />
+                    <span class="style14">&nbsp;<a href=""> TOP ARTISTS</a></span><br class="style14" />
+                    <span class="style14">&nbsp;<a href=""> DISCOVER</a>&nbsp;</span></td>
+            </tr>
+        </table>
+
+    </div>
+
+    </form>
+    
+    </body>
+</html>
